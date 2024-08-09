@@ -1,0 +1,34 @@
+ // Scanner scc =new Scanner(System.in);
+        // System.out.println("Enter the name of the student");
+        // stname = sc.next();
+       File stdata = new File("D://studentdata.txt");
+       if(!stdata.exists())
+       {
+           stdata.createNewFile();
+       }
+       FileWriter data =new FileWriter("D://studentdata.txt");
+       FileWriter writer =new FileWriter(stdata,true);
+       BufferedWriter bWriter =new BufferedWriter(writer);
+
+
+    //    InputStreamReader is = new InputStreamReader(System.in);
+    //    BufferedReader br =new BufferedReader(is);
+    //    System.out.print("Roll of Student :");
+    //    rollno=scc.next();
+
+
+    // System.out.println("\n");
+
+    //    System.out.print("Enter the name of Student");   
+    //    stname = scc.next();
+       String record =rollno+"\t "+stname+ "\n " ;
+       bWriter.write(record);
+     data.close(); 
+
+       File newfile = new File("D://newstudfile.txt")
+       if(!newfile.exists()){
+        newfile.createNewFile();
+
+       }
+       
+
